@@ -24,24 +24,6 @@ And run composer to update your dependencies:
     $ php composer.phar update
 
 ## Basic Usage
-
-The following gateways are provided by this package:
-
-* Jeton Pay
-
-Gateway Methods
-
-* purchase($options) - redirect user jetons wallet for capture an amount on the customer's wallet
-* refund($options) - refund an already processed transaction
-
-For general usage instructions, please see the main [Omnipay](https://github.com/thephpleague/omnipay)
-repository.
-
-## Unit Tests
-
-PHPUnit is a programmer-oriented testing framework for PHP. It is an instance of the xUnit architecture for unit testing frameworks.
-
-## Basic Usage
 ```php
 use Omnipay\Omnipay;
 
