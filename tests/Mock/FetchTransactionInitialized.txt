@@ -1,0 +1,45 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Sun, 19 Jan 2014 12:48:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 394
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, HEAD, OPTIONS, DELETE
+Access-Control-Max-Age: 300
+Cache-Control: no-cache, no-store
+Strict-Transport-Security: max-age=31556926; includeSubDomains
+X-Whom: dc1-web-2
+
+{
+  "paymentId": 1234,
+  "merchantOrderId": "ABC123DEF",
+  "customerNumber": 11223344,
+  "paymentAmount": 15,
+  "currencyCode": "EUR",
+  "paymentItems": [
+    {
+      "id": 1235,
+      "amount": 2.55,
+      "count": 1,
+      "description": "First Pay Transaction Item",
+      "creationDate": 1486402122337,
+      "lastModificationDate": 1486402122337,
+      "deleted": false
+    },
+    {
+      "id": 1236,
+      "amount": 12.45,
+      "count": 1,
+      "description": "First Pay Transaction Item",
+      "creationDate": 1486402122338,
+      "lastModificationDate": 1486402122338,
+      "deleted": false
+    }
+  ],
+  "paymentType": null,
+  "status": "INITIALIZED",
+  "successRedirectUrl": "http://www.yourdomain.com?a=success",
+  "cancelRedirectUrl": "http://www.yourdomain.com?a=cancel",
+  "failRedirectUrl": "http://www.yourdomain.com?a=fail"
+}

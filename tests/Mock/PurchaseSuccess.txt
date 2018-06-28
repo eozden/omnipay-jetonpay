@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.4.4
+Date: Sun, 19 Jan 2014 12:48:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 394
+Connection: keep-alive
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST, HEAD, OPTIONS, DELETE
+Access-Control-Max-Age: 300
+Cache-Control: no-cache, no-store
+Strict-Transport-Security: max-age=31556926; includeSubDomains
+X-Whom: dc1-web-2
+
+{
+  "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwibWVyY2hhbnRJZCI6MywicGF5bWVudElkIjoyODAzLCJleHAiOjE0ODA1NDI0ODIsImlhdCI6MTQ4MDUzODg4Mn0.QkHg7gZRcs-TznU_gHJCOMgHeIVYqjlDL7gkH4hDzg4eB0JiLMA3o2zmRtNBW_aOt-quHHU8yJJQor9qgD2K_g",
+  "redirectUrl": "https://sandbox-wallet.jeton.com/pay?token=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwibWVyY2hhbnRJZCI6MywicGF5bWVudElkIjoyODAzLCJleHAiOjE0ODA1NDI0ODIsImlhdCI6MTQ4MDUzODg4Mn0.QkHg7gZRcs-TznU_gHJCOMgHeIVYqjlDL7gkH4hDzg4eB0JiLMA3o2zmRtNBW_aOt-quHHU8yJJQor9qgD2K_g",
+  "paymentId":1234
+}
