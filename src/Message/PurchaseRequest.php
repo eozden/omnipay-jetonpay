@@ -84,6 +84,6 @@ class PurchaseRequest extends AbstractRequest
             json_encode($data)
         );
 
-        return json_decode($response->getBody(), true);
+        return json_decode($response->getBody()->getContents(), true);
     }
 }

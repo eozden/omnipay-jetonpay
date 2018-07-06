@@ -3,7 +3,7 @@ namespace Omnipay\JetonPay\Message;
 
 abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
 {
-    protected $endpoint = 'https://sandbox-walletapi.jeton.com/api/v2/integration/merchant';
+    protected $endpoint = 'https://sandbox-walletapi.jeton5.com/api/v2/integration/merchant';
 
     public function getApiKey()
     {
@@ -41,6 +41,6 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
             json_encode($data)
         );
 
-        return json_decode($response->getBody(), true);
+        return json_decode($response->getBody()->getContents(), true);
     }
 }
